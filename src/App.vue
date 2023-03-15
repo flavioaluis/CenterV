@@ -1,7 +1,11 @@
 <template>
+  
   <nav>
+    <img alt="CV logo" src="">
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">About</router-link> |
+    <router-link to="/services">Services</router-link> |
+    <router-link to="/contact">Contact</router-link>
   </nav>
   <router-view/>
 </template>
@@ -16,6 +20,8 @@
 }
 
 nav {
+  position:absolute;
+  right:0;
   padding: 30px;
 }
 
@@ -26,5 +32,12 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+
+nav img {
+position:fixed;
+width:250px;
+left:180px;  
+  
 }
 </style>

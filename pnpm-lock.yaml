@@ -15,11 +15,13 @@ specifiers:
   typescript: ~4.5.5
   vue: ^3.2.13
   vue-router: ^4.0.3
+  vuetify: ^3.1.9
 
 dependencies:
   core-js: 3.29.1
   vue: 3.2.47
   vue-router: 4.1.6_vue@3.2.47
+  vuetify: 3.1.9_vue@3.2.47
 
 devDependencies:
   '@typescript-eslint/eslint-plugin': 5.55.0_jotbivdhkn6m37ggqnnyyijnta
@@ -6927,6 +6929,25 @@ packages:
       '@vue/runtime-dom': 3.2.47
       '@vue/server-renderer': 3.2.47_vue@3.2.47
       '@vue/shared': 3.2.47
+
+  /vuetify/3.1.9_vue@3.2.47:
+    resolution: {integrity: sha512-r/yOWgYN5Xd5g2mUiWlIENUjRIj/KEK8CL9ZJcRvjscbmUD9x2ddA3E+HjMGa/6CaY4OlYfx/rM0fxd23MVX+g==}
+    engines: {node: ^12.20 || >=14.13}
+    peerDependencies:
+      vite-plugin-vuetify: ^1.0.0-alpha.12
+      vue: ^3.2.0
+      vue-i18n: ^9.0.0
+      webpack-plugin-vuetify: ^2.0.0-alpha.11
+    peerDependenciesMeta:
+      vite-plugin-vuetify:
+        optional: true
+      vue-i18n:
+        optional: true
+      webpack-plugin-vuetify:
+        optional: true
+    dependencies:
+      vue: 3.2.47
+    dev: false
 
   /watchpack/2.4.0:
     resolution: {integrity: sha512-Lcvm7MGST/4fup+ifyKi2hjyIAwcdI4HRgtvTpIUxBRhB+RFtUh8XtDOxUfctVCnhVi+QQj49i91OyvzkJl6cg==}
