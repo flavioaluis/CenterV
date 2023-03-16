@@ -1,14 +1,18 @@
 <template>
-  
-  <nav>
-    <img alt="CV logo" src="">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/services">Services</router-link> |
+    <div class="d-block pa-6 bg--white">
+      <img alt="CV logo" src="./assets/logo1.png">  
+    </div>
+    <div class="d-block pa-2 bg-red">
+      <nav class="d-block pa-2 bg-red">
+    <router-link to="/"><v-icon icon="mdi-home"></v-icon>Home </router-link> 
+    <router-link to="/about">About</router-link> 
+    <router-link to="/services">Services</router-link>
     <router-link to="/contact">Contact</router-link>
   </nav>
   <router-view/>
+    </div>
 </template>
+
 
 <style>
 #app {
@@ -19,25 +23,21 @@
   color: #2c3e50;
 }
 
-nav {
-  position:absolute;
-  right:0;
-  padding: 30px;
-}
-
 nav a {
+ 
   font-weight: bold;
-  color: #2c3e50;
+  padding:40px;
+
 }
 
 nav a.router-link-exact-active {
   color: #42b983;
 }
 
-nav img {
-position:fixed;
-width:250px;
-left:180px;  
+div img {
+
+width:350px;
+left:0;  
   
 }
 </style>
