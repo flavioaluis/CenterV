@@ -1,13 +1,28 @@
 <template>
-    <div class="d-block pa-6 bg--white">
+    <div class="h-25 w-0 bg--white">
       <img alt="CV logo" src="./assets/logo1.png">  
     </div>
-    <div class="d-block pa-2 bg-red">
-      <nav class="d-block pa-2 bg-red">
-    <router-link to="/"><v-icon icon="mdi-home"></v-icon>Home </router-link> 
-    <router-link to="/about">About</router-link> 
-    <router-link to="/services">Services</router-link>
-    <router-link to="/contact">Contact</router-link>
+    <div>
+      <v-divider
+      class="ms-4"
+      inset
+      vertical
+    ></v-divider>
+      <nav class=" bg-red">
+        
+        <v-toolbar-items>
+        
+          <router-link to="/">Home </router-link> 
+            <v-divider vertical></v-divider>
+          <router-link to="/about">About</router-link> 
+            <v-divider vertical></v-divider>
+          <router-link to="/services">Services</router-link>
+            <v-divider vertical></v-divider>
+          <router-link to="/contact">Brands</router-link>
+          <v-divider vertical></v-divider>
+          <router-link to="/contact">Contact</router-link>
+          
+        </v-toolbar-items>
   </nav>
   <router-view/>
     </div>
@@ -19,14 +34,16 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  
   color: #2c3e50;
 }
 
 nav a {
  
   font-weight: bold;
-  padding:40px;
+  width:100%;
+  padding: 15px;
+  text-align: center;
 
 }
 
@@ -35,9 +52,7 @@ nav a.router-link-exact-active {
 }
 
 div img {
-
-width:350px;
-left:0;  
-  
+  padding-top: 30px;
+  width:300px;  
 }
 </style>
