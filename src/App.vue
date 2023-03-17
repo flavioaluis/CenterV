@@ -1,7 +1,31 @@
 <template>
-    <div class="h-25 w-0 bg--white">
-      <img alt="CV logo" src="./assets/logo1.png">  
-    </div>
+    <v-container>
+    <v-row justify="space-between">
+      <v-col >
+        <img alt="CV logo" src="./assets/logo1.png">  
+      </v-col>
+      <v-col :class="['pt-10']">        
+            <v-card
+              height="100"
+              width="500"
+              :class="['d-flex justify-center align-center ', ]"
+            >
+              <div> <h2>Endereço</h2>
+              <p>Avenida Doutor Rômulo Cardillo, 434</p>
+              <p>Bairro João Pinheiro, Poços de Caldas MG</p> </div>
+            </v-card>
+        </v-col>
+      <v-col :class="['pt-10']">
+            <v-card
+              height="100"
+              width="500"
+              :class="['d-flex justify-center align-center ', ]"
+            >
+              <div><h2>Telefone</h2><p>(35)3722-2373</p><p>(35)99977-7688</p></div>
+            </v-card>
+        </v-col>
+    </v-row>
+  </v-container>
     <div>
       <v-divider
       class="ms-4"
