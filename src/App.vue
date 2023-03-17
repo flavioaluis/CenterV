@@ -42,7 +42,7 @@
             <v-divider vertical></v-divider>
           <router-link to="/services">Services</router-link>
             <v-divider vertical></v-divider>
-          <router-link to="/contact">Brands</router-link>
+          <router-link to="/brands">Brands</router-link>
           <v-divider vertical></v-divider>
           <router-link to="/contact">Contact</router-link>
           
@@ -78,5 +78,9 @@ nav a.router-link-exact-active {
 div img {
   padding-top: 30px;
   width:300px;  
+}
+
+v-breadcrumbs {
+  margin:30px;
 }
 </style>
