@@ -11,12 +11,12 @@ import  FooterBar  from '../components/FooterBar.vue'
         {
           title: 'Home',
           disabled: false,
-          href: 'breadcrumbs_home',
+          href: 'home',
         },
         {
           title: 'Services',
           disabled: true,
-          href: 'breadcrumbs_services',
+          href: 'services',
         },
       ],
     }),

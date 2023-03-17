@@ -80,7 +80,4 @@ div img {
   width:300px;  
 }
 
-v-breadcrumbs {
-  margin:30px;
-}
 </style>

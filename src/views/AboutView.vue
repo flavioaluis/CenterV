@@ -11,12 +11,12 @@ import  FooterBar  from '../components/FooterBar.vue'
         {
           title: 'Home',
           disabled: false,
-          href: 'breadcrumbs_home',
+          href: 'home',
         },
         {
           title: 'About',
           disabled: true,
-          href: 'breadcrumbs_about',
+          href: 'about',
         },
       ],
     }),
@@ -25,7 +25,7 @@ import  FooterBar  from '../components/FooterBar.vue'
 <template>
   
    <v-row justify="space-between">
-    <div>
+    <div class="breadcrumbs">
     <v-breadcrumbs :items="items">
       <template v-slot:divider>
         <v-icon icon="mdi-chevron-right"></v-icon>
@@ -56,8 +56,9 @@ import  FooterBar  from '../components/FooterBar.vue'
 </template>
 
 <style scoped>
-div  {
-  margin-left: 30px;
+
+.breadcrumbs {
+  margin-left: 20px;
 
  }
 
